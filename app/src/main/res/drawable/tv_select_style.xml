@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--默认-->
+    <item android:drawable="@drawable/reg_et_style_common"
+          android:state_checkable="false"/>
+    <!--选中，点击-->
+    <item android:drawable="@drawable/tv_select_style_choose"
+          android:state_checkable="true"/>
+    <item android:drawable="@drawable/tv_select_style_choose"
+          android:state_pressed="true"/>
+</selector>

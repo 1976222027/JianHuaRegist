@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:spinner="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/topbar_common_itt"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--拍照人脸图片-->
+            <ImageView
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <!--身份-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/reg_ids"
+                    android:textColor="@color/linesColor"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    style="@style/worker_select"
+                    android:layout_width="103dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:text="@string/reg_worker"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    style="@style/student_select"
+                    android:layout_width="103dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:text="@string/reg_students"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!--分组-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/reg_group"
+                    android:textColor="@color/linesColor"
+                    android:textSize="16sp"/>
+
+                <com.jianhua.spinner_lib.MaterialSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="222dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/reg_et_style_common"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    spinner:ms_background_color="@android:color/white"
+                    spinner:ms_popupwindow_height="wrap_content"
+                    spinner:ms_popupwindow_maxheight="200dp"
+                    spinner:ms_text_color="@color/linesColor"/>
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/linesColor"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/reg_name"
+                    android:textColor="@color/linesColor"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/reg_et_style_common"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/etColor"
+                    android:textCursorDrawable="@drawable/et_cursor_style"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!--手机号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/reg_phone"
+                    android:textColor="@color/linesColor"
+                    android:textSize="16sp"/>
+
+
+                <EditText
+                    android:layout_width="222dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/reg_et_style_common"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/etColor"
+                    android:textCursorDrawable="@drawable/et_cursor_style"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

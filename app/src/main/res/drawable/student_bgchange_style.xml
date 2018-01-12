@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--默认-->
+    <item android:drawable="@mipmap/reg_student"
+          android:state_selected="false"/>
+    <!--选中，点击-->
+    <item android:drawable="@mipmap/reg_student_choose"
+          android:state_selected="true"/>
+    <item android:drawable="@mipmap/reg_student_choose"
+          android:state_pressed="true"/>
+</selector>
