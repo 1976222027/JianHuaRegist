@@ -6,7 +6,7 @@
               android:background="@android:color/white"
               android:orientation="vertical">
 
-    <include layout="@layout/topbar_common_itt"/>
+    <include layout="@layout/topbar_common_ntt"/>
 
     <ScrollView
         android:layout_width="match_parent"

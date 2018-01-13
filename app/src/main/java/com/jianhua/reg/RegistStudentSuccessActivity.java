@@ -53,7 +53,7 @@ public class RegistStudentSuccessActivity extends BaseActivity {
         switch (view.getId()) {
 
             case R.id.btn_commit:
-                this.finish();
+                startActivity(MainActivity.class);
                 break;
             case R.id.tv_breakfast_right:
                 tv_breakfast_right.setSelected(true);

@@ -82,7 +82,7 @@ public class RegistActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.tv_student, R.id.tv_worker, R.id.layout_back, R.id.btn_commit})
+    @OnClick({R.id.tv_student, R.id.tv_worker, R.id.btn_commit})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_student:
@@ -94,9 +94,6 @@ public class RegistActivity extends BaseActivity {
                 tv_student.setSelected(false);
                 tv_worker.setSelected(true);
                 isWorker = true;
-                break;
-            case R.id.layout_back:
-                this.finish();
                 break;
             case R.id.btn_commit:
                 if (commitState) {

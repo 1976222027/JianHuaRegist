@@ -44,7 +44,7 @@ public class RegistWorkerSuccessActivity extends BaseActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_sure:
-                this.finish();
+                startActivity(MainActivity.class);
                 break;
             case R.id.tv_breakfast_right:
                 tv_breakfast_right.setSelected(true);

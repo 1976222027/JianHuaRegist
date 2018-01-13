@@ -25,7 +25,7 @@ public class LoginActivity extends BaseActivity {
     public void onClicks(View view) {
         switch (view.getId()) {
             case R.id.btn_login:
-                startActivity(RegistActivity.class);
+                startActivity(MainActivity.class);
                 break;
         }
     }
