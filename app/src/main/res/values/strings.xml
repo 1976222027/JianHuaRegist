@@ -13,5 +13,15 @@
     <string name="reg_btn_commit">提交</string>
     <string name="reg_btn_failed">返回</string>
     <string name="reg_btn_sure">确定</string>
-
+    <!--失败-->
+    <string name="reg_fail_title">注册失败</string>
+    <string name="fail_error">可能遇到了问题</string>
+    <string name="fail_toCheck">请检查！</string>
+    <string name="fail_fail_1">图像是否存在清晰人脸</string>
+    <string name="fail_fail_2">手机号是否已经注册</string>
+    <string name="fail_fail_3">人员是否已经注册</string>
+    <string name="fail_fail_4">图像是否达到上限</string>
+    <string name="success_notice">注册成功</string>
+    <string name="breakfast">早餐</string>
+    <string name="lunch">午餐</string>
 </resources>

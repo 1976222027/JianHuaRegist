@@ -40,6 +40,11 @@
             android:name=".RegistActivity"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity
+            android:name=".RegistFailActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

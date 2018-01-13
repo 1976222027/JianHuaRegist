@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="identify_types">
-        <item>身份证</item>
-        <item>护照</item>
-        <!--<item>签证</item>-->
-        <!--<item>军人证</item>-->
-        <!--<item>港澳通行证</item>-->
+        <item>小学部</item>
+        <item>初中部</item>
+        <item>高中部</item>
+        <item>领导部</item>
+        <item>餐饮卫生部</item>
     </string-array>
 </resources>

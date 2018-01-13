@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:spinner="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/topbar_common_ntt"/>
+
+    <!--拍照人脸图片-->
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="187dp"
+        android:layout_height="187dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/photo_default"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/fail_error"
+        android:gravity="center_vertical"
+        android:text="@string/fail_error"
+        android:textColor="@color/errorTextColor"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/fail_toCheck"
+        android:textColor="@color/errorTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        android:drawableStart="@mipmap/fail_1"
+        android:gravity="center_vertical"
+        android:text="@string/fail_fail_1"
+        android:textColor="@color/errorTextColor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/fail_2"
+        android:gravity="center_vertical"
+        android:text="@string/fail_fail_2"
+        android:textColor="@color/errorTextColor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/fail_3"
+        android:gravity="center_vertical"
+        android:text="@string/fail_fail_3"
+        android:textColor="@color/errorTextColor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/fail_4"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="@string/fail_fail_4"
+        android:textColor="@color/errorTextColor"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/reg_btn_common"
+        android:text="@string/reg_btn_failed"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

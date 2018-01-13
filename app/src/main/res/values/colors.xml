@@ -8,6 +8,7 @@
     <color name="commonColor_light">#898989</color>
     <color name="linesColor">#666666</color>
     <color name="etColor">#999999</color>
+    <color name="errorTextColor">#333333</color>
     <color name="seletcChoose">#ff9d3d</color>
     <color name="reg_btnColor">#4185eb</color>
 </resources>

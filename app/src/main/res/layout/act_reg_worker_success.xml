@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:spinner="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/topbar_common_itt"/>
+    <!--拍照人脸图片-->
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="187dp"
+        android:layout_height="187dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/photo_default"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/success_notice"
+        android:gravity="center_vertical"
+        android:text="@string/success_notice"
+        android:textColor="@color/errorTextColor"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:text="某某部门----李佳欣"
+        android:textColor="@color/errorTextColor"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="您好！"
+        android:textColor="@color/errorTextColor"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <!--身份-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/breakfast"
+            android:textColor="@color/linesColor"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:background="@drawable/lunch_right_style"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:text="@string/reg_worker"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:background="@drawable/lunch_wrong_style"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:text="@string/reg_students"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/lunch"
+            android:textColor="@color/linesColor"
+            android:textSize="16sp"/>
+
+        <TextView
+            style="@style/lunch_rightStyle"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:text="@string/reg_worker"
+            android:textSize="16sp"/>
+
+        <TextView
+            style="@style/lunch_wrongStyle"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/reg_btn_common"
+        android:text="@string/reg_btn_commit"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

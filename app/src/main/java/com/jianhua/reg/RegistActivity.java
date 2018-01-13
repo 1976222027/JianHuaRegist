@@ -1,11 +1,11 @@
 package com.jianhua.reg;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jianhua.reg.base.BaseActivity;
 import com.jianhua.reg.utils.MLog;
 import com.jianhua.reg.utils.SPUtil;
 import com.jianhua.spinner_lib.MaterialSpinner;
@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class RegistActivity extends AppCompatActivity {
+public class RegistActivity extends BaseActivity {
     @BindView(R.id.tv_title)
     TextView tv_title;
 
@@ -75,10 +75,11 @@ public class RegistActivity extends AppCompatActivity {
                 MLog.d("没有选类型defaultType=" + defaultType);
                 //保存选中的证件类型
                 SPUtil.setType(defaultType);
-
             }
         });
     }
+
+    boolean commitState = true;
 
     @OnClick({R.id.tv_student, R.id.tv_worker, R.id.layout_back, R.id.btn_commit})
     public void onClick(View view) {
@@ -95,7 +96,13 @@ public class RegistActivity extends AppCompatActivity {
                 this.finish();
                 break;
             case R.id.btn_commit:
-                this.finish();
+                if (commitState) {
+                    startActivity(RegistFailActivity.class);
+                    commitState = false;
+                } else {
+                    startActivity(RegistFailActivity.class);
+                    commitState = true;
+                }
                 break;
 
         }

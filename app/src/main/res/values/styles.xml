@@ -72,5 +72,4 @@
         <item name="android:drawableStart">@drawable/student_bgchange_style</item>
         <item name="android:textColor">@drawable/text_change_style</item>
     </style>
-
 </resources>
