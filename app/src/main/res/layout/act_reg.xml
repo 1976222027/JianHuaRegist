@@ -18,10 +18,12 @@
             android:orientation="vertical">
             <!--拍照人脸图片-->
             <ImageView
+                android:id="@+id/img_pic"
                 android:layout_width="187dp"
                 android:layout_height="187dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/photo_default"/>
             <!--身份-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,6 +41,7 @@
                     android:textSize="16sp"/>
 
                 <TextView
+                    android:id="@+id/tv_worker"
                     style="@style/worker_select"
                     android:layout_width="103dp"
                     android:layout_height="35dp"
@@ -51,6 +54,7 @@
                     android:textSize="16sp"/>
 
                 <TextView
+                    android:id="@+id/tv_student"
                     style="@style/student_select"
                     android:layout_width="103dp"
                     android:layout_height="35dp"
@@ -105,6 +109,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -153,7 +159,10 @@
                     android:layout_marginStart="18dp"
                     android:background="@drawable/reg_et_style_common"
                     android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:gravity="center_vertical|start"
+                    android:inputType="phone"
                     android:maxLines="1"
                     android:paddingStart="5dp"
                     android:textColor="@color/etColor"
@@ -162,10 +171,16 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/btn_commit"
                 android:layout_width="105dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="26dp"/>
+                android:layout_marginTop="26dp"
+                android:background="@drawable/reg_btn_common"
+                android:text="@string/reg_btn_commit"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -9,4 +9,5 @@
     <color name="linesColor">#666666</color>
     <color name="etColor">#999999</color>
     <color name="seletcChoose">#ff9d3d</color>
+    <color name="reg_btnColor">#4185eb</color>
 </resources>

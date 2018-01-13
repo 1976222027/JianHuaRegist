@@ -3,10 +3,10 @@
 
     <!--默认-->
     <item android:drawable="@drawable/reg_et_style_common"
-          android:state_checkable="false"/>
+          android:state_selected="false"/>
     <!--选中，点击-->
     <item android:drawable="@drawable/tv_select_style_choose"
-          android:state_checkable="true"/>
+          android:state_selected="true"/>
     <item android:drawable="@drawable/tv_select_style_choose"
           android:state_pressed="true"/>
 </selector>

@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">JianHuaRegist</string>
     <string name="login">登录</string>
+    <!--注册-->
+    <string name="reg_title">填写信息</string>
+    <string name="reg_reset">重拍</string>
     <string name="reg_ids">身份</string>
     <string name="reg_group">分组</string>
     <string name="reg_name">姓名</string>
     <string name="reg_phone">手机号</string>
     <string name="reg_students">学生</string>
     <string name="reg_worker">职工</string>
+    <string name="reg_btn_commit">提交</string>
+    <string name="reg_btn_failed">返回</string>
+    <string name="reg_btn_sure">确定</string>
 
 </resources>
