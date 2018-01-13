@@ -6,7 +6,7 @@
               android:background="@android:color/white"
               android:orientation="vertical">
 
-    <include layout="@layout/topbar_common_itt"/>
+    <include layout="@layout/topbar_common_ntt"/>
     <!--拍照人脸图片-->
     <ImageView
         android:id="@+id/img_pic"
@@ -64,27 +64,27 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/tv_breakfast_right"
             android:layout_width="103dp"
             android:layout_height="35dp"
-            android:background="@drawable/lunch_right_style"
             android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_right_style"
             android:clickable="true"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:paddingStart="24dp"
-            android:text="@string/reg_worker"
             android:textSize="16sp"/>
 
         <TextView
-            android:background="@drawable/lunch_wrong_style"
+            android:id="@+id/tv_breakfast_wrong"
             android:layout_width="103dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_wrong_style"
             android:clickable="true"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:paddingStart="24dp"
-            android:text="@string/reg_students"
             android:textSize="16sp"/>
     </LinearLayout>
 
@@ -104,22 +104,23 @@
             android:textSize="16sp"/>
 
         <TextView
-            style="@style/lunch_rightStyle"
+            android:id="@+id/tv_lunch_right"
             android:layout_width="103dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_right_style"
             android:clickable="true"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:paddingStart="24dp"
-            android:text="@string/reg_worker"
             android:textSize="16sp"/>
 
         <TextView
-            style="@style/lunch_wrongStyle"
+            android:id="@+id/tv_lunch_wrong"
             android:layout_width="103dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_wrong_style"
             android:clickable="true"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
@@ -128,13 +129,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_commit"
+        android:id="@+id/btn_sure"
         android:layout_width="105dp"
         android:layout_height="35dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="26dp"
         android:background="@drawable/reg_btn_common"
-        android:text="@string/reg_btn_commit"
+        android:text="@string/reg_btn_sure"
         android:textColor="@android:color/white"
         android:textSize="16sp"/>
 

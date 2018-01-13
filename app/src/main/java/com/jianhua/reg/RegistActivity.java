@@ -35,6 +35,8 @@ public class RegistActivity extends BaseActivity {
 
     private String[] typeArrays;
     private int defaultType = 0;
+    private boolean isWorker = true;//默认是worker
+    private boolean commitState = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +81,6 @@ public class RegistActivity extends BaseActivity {
         });
     }
 
-    boolean commitState = true;
 
     @OnClick({R.id.tv_student, R.id.tv_worker, R.id.layout_back, R.id.btn_commit})
     public void onClick(View view) {
@@ -87,10 +88,12 @@ public class RegistActivity extends BaseActivity {
             case R.id.tv_student:
                 tv_student.setSelected(true);
                 tv_worker.setSelected(false);
+                isWorker = false;
                 break;
             case R.id.tv_worker:
                 tv_student.setSelected(false);
                 tv_worker.setSelected(true);
+                isWorker = true;
                 break;
             case R.id.layout_back:
                 this.finish();
@@ -100,7 +103,11 @@ public class RegistActivity extends BaseActivity {
                     startActivity(RegistFailActivity.class);
                     commitState = false;
                 } else {
-                    startActivity(RegistFailActivity.class);
+                    if (isWorker) {
+                        startActivity(RegistWorkerSuccessActivity.class);
+                    } else {
+                        startActivity(RegistStudentSuccessActivity.class);
+                    }
                     commitState = true;
                 }
                 break;

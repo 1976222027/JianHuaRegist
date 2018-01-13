@@ -15,6 +15,7 @@
     <string name="reg_btn_sure">确定</string>
     <!--失败-->
     <string name="reg_fail_title">注册失败</string>
+    <string name="reg_success_title">注册成功</string>
     <string name="fail_error">可能遇到了问题</string>
     <string name="fail_toCheck">请检查！</string>
     <string name="fail_fail_1">图像是否存在清晰人脸</string>
@@ -24,4 +25,5 @@
     <string name="success_notice">注册成功</string>
     <string name="breakfast">早餐</string>
     <string name="lunch">午餐</string>
+    <string name="dinner">晚餐</string>
 </resources>

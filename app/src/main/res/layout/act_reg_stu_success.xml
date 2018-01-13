@@ -6,7 +6,7 @@
               android:background="@android:color/white"
               android:orientation="vertical">
 
-    <include layout="@layout/topbar_common_itt"/>
+    <include layout="@layout/topbar_common_ntt"/>
     <!--拍照人脸图片-->
     <ImageView
         android:id="@+id/img_pic"
@@ -22,12 +22,22 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
         android:drawablePadding="10dp"
-        android:drawableStart="@mipmap/fail_error"
+        android:drawableStart="@mipmap/success_notice"
         android:gravity="center_vertical"
-        android:text="@string/fail_error"
+        android:text="@string/success_notice"
         android:textColor="@color/errorTextColor"
         android:textSize="20sp"/>
-    <!--身份-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:text="您好，李佳欣"
+        android:textColor="@color/errorTextColor"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,34 +49,112 @@
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:gravity="end|center_vertical"
-            android:text="@string/reg_ids"
+            android:text="@string/breakfast"
             android:textColor="@color/linesColor"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/tv_worker"
-            style="@style/worker_select"
+            android:id="@+id/tv_breakfast_right"
             android:layout_width="103dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_right_style"
             android:clickable="true"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:paddingStart="24dp"
-            android:text="@string/reg_worker"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/tv_student"
-            style="@style/student_select"
+            android:id="@+id/tv_breakfast_wrong"
             android:layout_width="103dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_wrong_style"
             android:clickable="true"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:paddingStart="24dp"
-            android:text="@string/reg_students"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/lunch"
+            android:textColor="@color/linesColor"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_lunch_right"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_right_style"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_lunch_wrong"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_wrong_style"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/dinner"
+            android:textColor="@color/linesColor"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_dinner_right"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_right_style"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_dinner_wrong"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/lunch_wrong_style"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
             android:textSize="16sp"/>
     </LinearLayout>
 
