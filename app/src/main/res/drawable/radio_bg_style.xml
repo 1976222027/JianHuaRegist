@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--默认-->
-    <item android:drawable="@drawable/radio_btn_bg_style_unchoose"/>
+    <item android:drawable="@drawable/radio_btn_bg_style_unchoose"
+          android:state_selected="false"/>
     <!--选中，点击-->
     <item android:drawable="@drawable/radio_btn_bg_style_choose"
           android:state_selected="true"/>
     <item android:drawable="@drawable/radio_btn_bg_style_choose"
           android:state_pressed="true"/>
-    <item android:color="@drawable/radio_btn_bg_style_choose"
-          android:state_checkable="true"/>
 </selector>

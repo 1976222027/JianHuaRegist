@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <!---->
+    <color name="white">#FFFFFF</color>
     <color name="commonColor_dark">#656565</color>
     <color name="commonColor_light">#898989</color>
     <color name="linesColor">#666666</color>

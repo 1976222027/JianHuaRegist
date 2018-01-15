@@ -7,4 +7,25 @@
         <item>领导部</item>
         <item>餐饮卫生部</item>
     </string-array>
+    <string-array name="student_array">
+        <item>一年级</item>
+        <item>二年级</item>
+        <item>三年级</item>
+        <item>四年级</item>
+        <item>五年级</item>
+        <item>六年级</item>
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>高一</item>
+        <item>高二</item>
+        <item>高三</item>
+    </string-array>
+    <string-array name="worker_array">
+        <item>小学部</item>
+        <item>初中部</item>
+        <item>高中部</item>
+        <item>领导部</item>
+        <item>餐饮卫生部</item>
+    </string-array>
 </resources>
