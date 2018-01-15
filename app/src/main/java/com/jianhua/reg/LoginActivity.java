@@ -26,6 +26,7 @@ public class LoginActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.btn_login:
                 startActivity(MainActivity.class);
+                this.finish();
                 break;
         }
     }

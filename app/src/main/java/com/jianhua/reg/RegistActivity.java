@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class RegistActivity extends BaseActivity {
+
     @BindView(R.id.tv_title)
     TextView tv_title;
 
@@ -82,13 +83,16 @@ public class RegistActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.tv_student, R.id.tv_worker, R.id.btn_commit})
+    @OnClick({R.id.tv_student, R.id.tv_worker, R.id.btn_commit, R.id.tv_right})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_student:
                 tv_student.setSelected(true);
                 tv_worker.setSelected(false);
                 isWorker = false;
+                break;
+            case R.id.tv_right:
+                startActivity(MainActivity.class);
                 break;
             case R.id.tv_worker:
                 tv_student.setSelected(false);

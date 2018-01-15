@@ -21,11 +21,17 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_photo})
+    @OnClick({R.id.btn_photo, R.id.layout_back, R.id.layout_right})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_photo:
                 startActivity(RegistActivity.class);
+                break;
+            case R.id.layout_back:
+                this.finish();
+                break;
+            case R.id.layout_right:
+                startActivity(RegistListActivity.class);
                 break;
         }
     }

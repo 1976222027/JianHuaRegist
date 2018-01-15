@@ -135,7 +135,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="26dp"
         android:background="@drawable/reg_btn_common"
-        android:text="@string/reg_btn_sure"
+        android:text="@string/reg_btn_commit"
         android:textColor="@android:color/white"
         android:textSize="16sp"/>
 

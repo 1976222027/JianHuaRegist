@@ -55,6 +55,10 @@
             android:name=".RegistStudentSuccessActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".RegistListActivity"
+            android:screenOrientation="portrait">
+        </activity>
 
     </application>
 
