@@ -45,7 +45,7 @@ public class DetailWorkerActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_reg);
+        setContentView(R.layout.act_detail_worker);
         ButterKnife.bind(this);
         initSpinner();
         initMyView();

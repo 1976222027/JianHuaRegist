@@ -19,7 +19,7 @@ import butterknife.OnClick;
  * 支持点击切换 和滑动切换
  */
 
-public class RegistListActivity extends BaseFragmentActivity  {
+public class RegistListActivity extends BaseFragmentActivity {
 
     @BindView(R.id.layout_right)
     RelativeLayout layout_right;
@@ -80,11 +80,18 @@ public class RegistListActivity extends BaseFragmentActivity  {
         });
     }
 
+    boolean isStudent = true;
+
     @OnClick({R.id.layout_right, R.id.layout_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.layout_right:
-                startActivity(MainActivity.class);
+                //                startActivity(MainActivity.class);
+                if (isStudent) {
+                    startActivity(DetailStudentActivity.class);
+                } else {
+                    startActivity(DetailWorkerActivity.class);
+                }
                 break;
             case R.id.layout_back:
                 this.finish();

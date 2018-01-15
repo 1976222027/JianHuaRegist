@@ -28,6 +28,7 @@ import butterknife.Unbinder;
  */
 
 public class RegStudentFragment extends BaseFragment {
+
     @BindView(R.id.recylcerView)
     RecyclerView recylcerView;
 

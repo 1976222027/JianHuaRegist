@@ -28,4 +28,6 @@
     <string name="breakfast">早餐</string>
     <string name="lunch">午餐</string>
     <string name="dinner">晚餐</string>
+    <string name="door">门禁</string>
+    <string name="hall">食堂</string>
 </resources>

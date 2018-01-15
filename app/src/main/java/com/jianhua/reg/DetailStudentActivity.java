@@ -19,23 +19,43 @@ import butterknife.OnClick;
  */
 public class DetailStudentActivity extends BaseActivity {
 
-    @BindView(R.id.tv_title)
-    TextView tv_title;
 
-    @BindView(R.id.tv_right)
-    TextView tv_right;
-
+    //分组
     @BindView(R.id.spinner)
     MaterialSpinner spinner;
 
+    //    身份
     @BindView(R.id.tv_student)
     TextView tv_student;
 
     @BindView(R.id.tv_worker)
     TextView tv_worker;
 
-    @BindView(R.id.img_pic)
-    ImageView img_pic;
+    //姓名
+    @BindView(R.id.et_name)
+    TextView et_name;
+    //手机
+    @BindView(R.id.et_phone)
+    TextView et_phone;
+
+    //早餐
+    @BindView(R.id.tv_breakfast_right)
+    TextView tv_breakfast_right;
+
+    @BindView(R.id.tv_breakfast_wrong)
+    ImageView tv_breakfast_wrong;
+    //午餐
+    @BindView(R.id.tv_lunch_right)
+    TextView tv_lunch_right;
+
+    @BindView(R.id.tv_lunch_wrong)
+    ImageView tv_lunch_wrong;
+    //晚餐
+    @BindView(R.id.tv_dinner_right)
+    TextView tv_dinner_right;
+
+    @BindView(R.id.tv_dinner_wrong)
+    ImageView tv_dinner_wrong;
 
     private String[] typeArrays;
     private int defaultType = 0;
@@ -45,7 +65,7 @@ public class DetailStudentActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_reg);
+        setContentView(R.layout.act_detail_stu);
         ButterKnife.bind(this);
         initSpinner();
         initMyView();
@@ -54,8 +74,6 @@ public class DetailStudentActivity extends BaseActivity {
     private void initMyView() {
         //默认员工
         tv_worker.setSelected(true);
-        tv_title.setText(getResources().getString(R.string.reg_title));
-        tv_right.setText(getResources().getString(R.string.reg_reset));
     }
 
     private void initSpinner() {

@@ -14,6 +14,7 @@ import butterknife.OnClick;
  * 学生注册界面
  */
 public class RegistStudentSuccessActivity extends BaseActivity {
+
     @BindView(R.id.tv_title)
     TextView tv_title;
     @BindView(R.id.tv_breakfast_right)
@@ -28,7 +29,6 @@ public class RegistStudentSuccessActivity extends BaseActivity {
     TextView tv_dinner_right;
     @BindView(R.id.tv_dinner_wrong)
     TextView tv_dinner_wrong;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
