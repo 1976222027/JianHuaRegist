@@ -57,20 +57,10 @@
     </RelativeLayout>
 
     <FrameLayout
-
+        android:id="@+id/layout_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white">
-
-        <Button
-            android:id="@+id/btn_photo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="假装拍照成功"/>
-
-        <SurfaceView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:background="@color/commonColor_light">
     </FrameLayout>
 
 </LinearLayout>

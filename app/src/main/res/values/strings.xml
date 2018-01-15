@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">JianHuaRegist</string>
     <string name="login">登录</string>
+    <!--主界面-->
+    <string name="conditions">请不要戴眼镜，口罩</string>
     <!--注册-->
     <string name="reg_title">填写信息</string>
     <string name="reg_reset">重拍</string>
