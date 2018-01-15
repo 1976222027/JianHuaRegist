@@ -24,7 +24,7 @@ import butterknife.Unbinder;
 
 
 /**
- * 资讯页根fragment
+ * 学生列表fragment
  */
 
 public class RegStudentFragment extends BaseFragment {

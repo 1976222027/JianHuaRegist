@@ -15,9 +15,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 共同注册界面
+ * 职工详情
  */
-public class RegistActivity extends BaseActivity {
+public class DetailWorkerActivity extends BaseActivity {
 
     @BindView(R.id.tv_title)
     TextView tv_title;

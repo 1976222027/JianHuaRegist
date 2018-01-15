@@ -24,7 +24,7 @@ import butterknife.Unbinder;
 
 
 /**
- * fragment
+ * 职工列表fragment
  */
 
 public class RegWorkerFragment extends BaseFragment {

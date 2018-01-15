@@ -10,6 +10,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 职工注册界面
+ */
 public class RegistWorkerSuccessActivity extends BaseActivity {
     @BindView(R.id.tv_title)
     TextView tv_title;
