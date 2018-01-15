@@ -89,8 +89,10 @@ public class RegistListActivity extends BaseFragmentActivity {
                 //                startActivity(MainActivity.class);
                 if (isStudent) {
                     startActivity(DetailStudentActivity.class);
+                    isStudent = false;
                 } else {
                     startActivity(DetailWorkerActivity.class);
+                    isStudent = true;
                 }
                 break;
             case R.id.layout_back:

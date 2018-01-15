@@ -2,12 +2,13 @@ package com.jianhua.reg;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.jianhua.reg.base.BaseActivity;
 import com.jianhua.reg.utils.MLog;
 import com.jianhua.reg.utils.SPUtil;
+import com.jianhua.reg.utils.ToastUtil;
 import com.jianhua.spinner_lib.MaterialSpinner;
 
 import butterknife.BindView;
@@ -19,23 +20,37 @@ import butterknife.OnClick;
  */
 public class DetailWorkerActivity extends BaseActivity {
 
-    @BindView(R.id.tv_title)
-    TextView tv_title;
 
-    @BindView(R.id.tv_right)
-    TextView tv_right;
-
+    //分组
     @BindView(R.id.spinner)
     MaterialSpinner spinner;
 
+    //身份
     @BindView(R.id.tv_student)
     TextView tv_student;
 
     @BindView(R.id.tv_worker)
     TextView tv_worker;
 
-    @BindView(R.id.img_pic)
-    ImageView img_pic;
+    // 门禁
+    @BindView(R.id.tv_breakfast_right)
+    TextView tv_breakfast_right;
+
+    @BindView(R.id.tv_breakfast_wrong)
+    TextView tv_breakfast_wrong;
+    // 食堂
+    @BindView(R.id.tv_lunch_right)
+    TextView tv_lunch_right;
+    @BindView(R.id.tv_lunch_wrong)
+    TextView tv_lunch_wrong;
+
+    //姓名
+    @BindView(R.id.et_name)
+    EditText et_name;
+
+    //手机
+    @BindView(R.id.et_phone)
+    EditText et_phone;
 
     private String[] typeArrays;
     private int defaultType = 0;
@@ -51,11 +66,22 @@ public class DetailWorkerActivity extends BaseActivity {
         initMyView();
     }
 
+    //假数据：跳转的值
     private void initMyView() {
-        //默认员工
+        //身份
         tv_worker.setSelected(true);
-        tv_title.setText(getResources().getString(R.string.reg_title));
-        tv_right.setText(getResources().getString(R.string.reg_reset));
+        tv_student.setSelected(false);
+        //门禁
+        tv_breakfast_right.setSelected(true);
+        tv_breakfast_wrong.setSelected(false);
+
+        //食堂
+        tv_lunch_right.setSelected(true);
+        tv_lunch_wrong.setSelected(false);
+
+        et_name.setText("李佳欣");
+        et_phone.setText("18210199639");
+
     }
 
     private void initSpinner() {
@@ -85,10 +111,23 @@ public class DetailWorkerActivity extends BaseActivity {
         });
     }
 
-
-    @OnClick({R.id.tv_student, R.id.tv_worker, R.id.btn_commit, R.id.tv_right})
+    @OnClick({R.id.layout_back, R.id.tv_delete, R.id.tv_save
+            , R.id.tv_student, R.id.tv_worker
+            , R.id.tv_lunch_right, R.id.tv_lunch_wrong
+            , R.id.tv_breakfast_right, R.id.tv_breakfast_wrong})
     public void onClick(View view) {
         switch (view.getId()) {
+            case R.id.layout_back:
+                this.finish();
+                break;
+            case R.id.tv_delete:
+                ToastUtil.ToastShort(this, "已删除");
+                this.finish();
+                break;
+            case R.id.tv_save:
+                ToastUtil.ToastShort(this, "保存成功");
+                this.finish();
+                break;
             case R.id.tv_student:
                 tv_student.setSelected(true);
                 tv_worker.setSelected(false);
@@ -102,18 +141,21 @@ public class DetailWorkerActivity extends BaseActivity {
                 tv_worker.setSelected(true);
                 isWorker = true;
                 break;
-            case R.id.btn_commit:
-                if (commitState) {
-                    startActivity(RegistFailActivity.class);
-                    commitState = false;
-                } else {
-                    if (isWorker) {
-                        startActivity(RegistWorkerSuccessActivity.class);
-                    } else {
-                        startActivity(RegistStudentSuccessActivity.class);
-                    }
-                    commitState = true;
-                }
+            case R.id.tv_breakfast_right:
+                tv_breakfast_right.setSelected(true);
+                tv_breakfast_wrong.setSelected(false);
+                break;
+            case R.id.tv_breakfast_wrong:
+                tv_breakfast_right.setSelected(false);
+                tv_breakfast_wrong.setSelected(true);
+                break;
+            case R.id.tv_lunch_right:
+                tv_lunch_right.setSelected(true);
+                tv_lunch_wrong.setSelected(false);
+                break;
+            case R.id.tv_lunch_wrong:
+                tv_lunch_right.setSelected(false);
+                tv_lunch_wrong.setSelected(true);
                 break;
 
         }

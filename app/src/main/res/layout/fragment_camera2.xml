@@ -39,8 +39,8 @@
                 android:id="@+id/img_pic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginBottom="5dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="5dp"
                 android:background="@mipmap/take_photo"/>
         </FrameLayout>
         <!--&lt;!&ndash;该层用于设置渲染图片&ndash;&gt;-->

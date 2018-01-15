@@ -59,7 +59,7 @@
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:gravity="end|center_vertical"
-            android:text="@string/breakfast"
+            android:text="@string/door"
             android:textColor="@color/linesColor"
             android:textSize="16sp"/>
 
@@ -99,7 +99,7 @@
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:gravity="end|center_vertical"
-            android:text="@string/lunch"
+            android:text="@string/hall"
             android:textColor="@color/linesColor"
             android:textSize="16sp"/>
 
