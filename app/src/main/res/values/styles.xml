@@ -60,13 +60,14 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:gravity">center</item>
     </style>
-
+    <!--用餐style-->
     <style name="worker_select">
         <item name="android:background">@drawable/tv_select_style</item>
         <item name="android:drawableStart">@drawable/worker_bgchange_style</item>
         <item name="android:textColor">@drawable/text_change_style</item>
     </style>
 
+    <!--用餐style-->
     <style name="student_select">
         <item name="android:background">@drawable/tv_select_style</item>
         <item name="android:drawableStart">@drawable/student_bgchange_style</item>
